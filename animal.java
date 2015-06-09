@@ -1,15 +1,20 @@
 abstract class Animal {
   private Human owner;
+  private EatStrategy eatStrategy;
 
   public Animal(Human owner) {
     this.owner = owner;
+    this.eatStrategy = EatStrategy.fabricate(owner);
   }
 
   public String getSpecies() { return this.getClass().getName().toLowerCase(); }
+  public EatStrategy getEatStrategy() { return this.eatStrategy; }
   public Human getOwner() { return this.owner; }
 
   /** returns true if we got something */
-  public abstract boolean eat();
+  public boolean eat() {
+    return this.getEatStrategy().serve();
+  }
 
   public abstract void makeNoise();
 

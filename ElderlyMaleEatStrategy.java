@@ -1,0 +1,2 @@
+class ElderlyMaleEatStrategy extends MaleEatStrategy {
+}

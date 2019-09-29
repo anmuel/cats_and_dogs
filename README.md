@@ -17,4 +17,6 @@ The project itself was used in an internal developer workshop at my company.
 
 It was inspired by [a talk by Jim Gay at the Rubyconf 2014 about the Eastern Principle](http://confreaks.tv/videos/rubyconf2014-eastward-ho-a-clear-path-through-ruby-with-oo).
 
+Props to the anti-if-campaign https://francescocirillo.com/pages/anti-if-campaign
+
 Java was chosen to demonstrate that the principles are not dependent on any specific language.
